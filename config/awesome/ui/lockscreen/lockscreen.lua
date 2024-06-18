@@ -27,7 +27,7 @@ local some_textbox = wibox.widget.textbox()
 local lock_screen_box = wibox({ visible = false, ontop = true, type = "splash", screen = screen.primary })
 awful.placement.maximize(lock_screen_box)
 
-lock_screen_box.bg = beautiful.transparent
+lock_screen_box.bg = beautiful.ink2 .. "aa"
 lock_screen_box.fg = beautiful.white1
 
 --- Add lockscreen to each screen
@@ -35,7 +35,7 @@ awful.screen.connect_for_each_screen(function(s)
   if s == screen.primary then
     s.mylockscreen = lock_screen_box
   else
-    s.mylockscreen = helpers.ui.screen_mask(s, beautiful.ink1 or beautiful.gray1)
+    s.mylockscreen = helpers.ui.screen_mask(s, beautiful.ink2 or beautiful.gray1)
   end
 end)
 
@@ -117,7 +117,7 @@ local time_char = split_str(char, " ")
 
 local time = wibox.widget({
   forced_num_cols = 11,
-  spacing = dpi(6),
+  spacing = dpi(8),
   layout = wibox.layout.grid,
 })
 
@@ -140,7 +140,7 @@ end
 
 local var_count = 0
 for i, m in pairs(time_char) do
-  local text = helpers.ui.colorize_text(m, "#ffffff" .. "10")
+  local text = helpers.ui.colorize_text(m, beautiful.gray0 .. "99")
 
   var_count = var_count + 1
   local create_dummy_text = true
@@ -173,7 +173,7 @@ end
 local function deactivate_word(w)
   for _, m in pairs(char_map[w]) do
     local text = m.text
-    m.markup = helpers.ui.colorize_text(text, "#ffffff" .. "10")
+    m.markup = helpers.ui.colorize_text(text, beautiful.gray0 .. "99")
   end
 end
 
@@ -375,10 +375,10 @@ lock_screen_box:setup({
     --- Vertical centering
     nil,
     {
-      helpers.ui.vertical_pad(dpi(20)),
+      nil,
       time,
       lock_animation,
-      spacing = dpi(120),
+      spacing = dpi(64),
       layout = wibox.layout.fixed.vertical,
     },
     expand = "none",
