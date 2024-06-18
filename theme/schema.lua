@@ -1,5 +1,5 @@
 return {
-	theme = "Direwolf Ghost",
+	theme = "Galax",
 	palette = {
 		accent = "#b3d57d",
 		-- backgrounds

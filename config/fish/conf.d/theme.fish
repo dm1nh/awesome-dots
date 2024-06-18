@@ -1,4 +1,4 @@
-# Direwolf Ghost colorscheme for Fish
+# Galax colorscheme for Fish
 # ~/.config/fish/conf.d/theme.fish
 
 # --> special
