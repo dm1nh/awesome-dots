@@ -48,7 +48,7 @@ rm -rf themix-generator
 
 # Backup old configs
 mv ~/.config ~/.config.backup
-ln -s ~/.dotfiles/config ~/.config
+ln -s ~/.dots/config ~/.config
 # Copy common system configs
 sudo cp -R ./settings/xorg.conf.d /etc/X11/
 sudo cp -R ./settings/sddm.conf.d /etc/
