@@ -46,26 +46,26 @@ end)
 
 naughty.connect_signal("request::display", function(n)
   local app_icons = {
-    ["screenshot"] = "",
-    ["colorpicker"] = "",
-    ["record"] = "",
-    ["nightlight"] = "",
-    ["bluetooth"] = "",
-    ["volume"] = "",
-    ["idle inhibitor"] = "",
+    ["screenshot"] = { "", beautiful.yellow1 },
+    ["colorpicker"] = { "", beautiful.aqua1 },
+    ["record"] = { "", beautiful.magenta1 },
+    ["nightlight"] = { "", beautiful.yellow1 },
+    ["bluetooth"] = { "", beautiful.blue1 },
+    ["volume"] = { "", beautiful.aqua1 },
+    ["idle inhibitor"] = { "", beautiful.violet1 },
   }
 
   local app_icon = nil
   if app_icons[string.lower(n.app_name)] then
     app_icon = app_icons[string.lower(n.app_name)]
   else
-    app_icon = ""
+    app_icon = { "", beautiful.accent }
   end
 
   local app_icon_n = wibox.widget({
     widget = wibox.widget.textbox,
     font = beautiful.font_icon .. " 24",
-    markup = helpers.ui.colorize_text(app_icon, beautiful.accent),
+    markup = helpers.ui.colorize_text(app_icon[1], app_icon[2]),
   })
 
   -- Icon widget
@@ -103,16 +103,16 @@ naughty.connect_signal("request::display", function(n)
   local app_name = wibox.widget({
     widget = wibox.widget.textbox,
     font = beautiful.font,
-    markup = helpers.ui.colorize_text(n.app_name:gsub("^%l", string.upper) or "System", beautiful.accent),
+    markup = helpers.ui.colorize_text(n.app_name:gsub("^%l", string.upper) or "System", beautiful.white1),
   })
 
   -- Dismiss button widget
   local dismiss = wibox.widget({
     widget = wibox.container.background,
-    bg = beautiful.ink1,
+    bg = beautiful.red1,
     shape = gears.shape.circle,
-    forced_width = dpi(18),
-    forced_height = dpi(18),
+    forced_width = dpi(16),
+    forced_height = dpi(16),
     {
       widget = wibox.container.place,
       halign = "center",
@@ -120,7 +120,7 @@ naughty.connect_signal("request::display", function(n)
       {
         widget = wibox.widget.textbox,
         font = beautiful.font_icon .. " 11",
-        markup = helpers.ui.colorize_text("", beautiful.white2),
+        markup = helpers.ui.colorize_text("", beautiful.ink0),
       },
     },
   })
