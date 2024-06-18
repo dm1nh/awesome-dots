@@ -58,7 +58,6 @@ thunar
 thunar-archive-plugin
 tmux
 tree
-ttf-roboto
 tumbler
 unzip
 vulkan-radeon

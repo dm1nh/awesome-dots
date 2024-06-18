@@ -4,6 +4,7 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
+      require("galax").setup({ compile = false })
       vim.cmd("colorscheme galax")
     end,
   },
