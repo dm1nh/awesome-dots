@@ -39,7 +39,7 @@ rm -rf fonts
 fc-cache -r
 
 # Wallpapers
-sudo cp ./wallpapers/greeting.png /usr/share/sddm/themes/Sugar-Candy/Backgrounds/
+sudo cp ~/.config/awesome/theme/assets/greeting.png /usr/share/sddm/themes/Sugar-Candy/Backgrounds/
 
 # Install GTK themes
 git clone https://github.com/dm1nh/themix-generator.git
