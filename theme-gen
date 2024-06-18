@@ -1,0 +1,22 @@
+#!/bin/lua
+local schema = require("theme.schema")
+local templates = require("theme.templates")
+
+local config_dir = arg[1] or "./config"
+os.execute("mkdir -p " .. config_dir)
+
+for _, tpl in pairs(templates) do
+  local template_content = tpl.gen(schema)
+  local dir_path = config_dir .. "/" .. tpl.path
+  os.execute("mkdir -p " .. dir_path)
+  local file_path = dir_path .. "/" .. tpl.filename
+  local file = io.open(file_path, "w")
+  if file then
+    io.output(file)
+    io.write(template_content)
+    io.close(file)
+    print("Generate theme for '" .. tpl.name .. "' ... Success")
+  else
+    print("Generate theme for '" .. tpl.name .. "' ... Failed")
+  end
+end

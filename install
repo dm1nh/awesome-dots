@@ -1,0 +1,78 @@
+#!/usr/bin/env bash
+
+source ./scriptdata/functions.sh
+
+# Install basic packages
+sudo pacman -S --noconfirm --needed base-devel git fish
+
+if ! check_dep paru; then
+	sudo pacman -S --noconfirm --needed rustup
+
+	# Install rustup toolchain
+	rustup install stable
+	rustup default stable
+
+	sleep 1
+
+	# Install Paru
+	git clone https://aur.archlinux.org/paru.git
+	pushd paru
+	makepkg -si --noconfirm
+	popd
+	rm -rf paru
+fi
+
+paru -Syy --noconfirm
+paru -Sy --noconfirm archlinux-keyring
+paru -S --noconfirm - <./scriptdata/pkgs.txt
+
+sudo systemctl enable sddm.service
+
+xdg-user-dirs-update
+
+# Fonts
+rm -rf ~/.local/share/{themes,fonts}
+mkdir -p ~/.local/share/{themes,fonts}
+git clone https://github.com/dm1nh/fonts.git
+cp -R fonts/{Cosmos-Patched,Material-Icons,NotoColorEmoji-Regular.ttf} ~/.local/share/fonts/
+rm -rf fonts
+fc-cache -r
+
+# Wallpapers
+sudo cp ./wallpapers/greeting.png /usr/share/sddm/themes/Sugar-Candy/Backgrounds/
+
+# Install GTK themes
+git clone https://github.com/dm1nh/themix-generator.git
+cp -R themix-generator/themes/Galax-Beige ~/.local/share/themes/
+rm -rf themix-generator
+
+# Backup old configs
+mv ~/.config ~/.config.backup
+ln -s ~/.dotfiles/config ~/.config
+# Copy common system configs
+sudo cp -R ./settings/xorg.conf.d /etc/X11/
+sudo cp -R ./settings/sddm.conf.d /etc/
+sudo cp ./config/sugar-candy/theme.conf /usr/share/sddm/themes/Sugar-Candy/
+cp ./settings/.gitconfig ~/
+cp -R ./settings/.icons ~/
+
+# Remove default cursor theme
+sudo rm -rf /usr/share/icons/default
+
+# fnm
+if ! check_dep fnm; then
+	curl -fsSL https://fnm.vercel.app/install | bash
+fi
+
+# pnpm
+if ! check_dep pnpm; then
+	curl -fsSL https://get.pnpm.io/install.sh | sh -
+fi
+
+# Run Docker with current user privileges
+sudo usermod -aG docker $USER
+
+paru -Rns $(paru -Qdtq)
+paru -Scc --noconfirm
+
+echo "\nReboot to your system and Happy coding!"

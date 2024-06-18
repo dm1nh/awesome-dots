@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
+  "description": "neovim config for lua-language-server",
+  "diagnostics": {
+    "enable": true,
+    "globals": ["vim", "Utils", "MiniHipatterns"]
+  },
+  "workspace": {
+    "maxPreload": 2000,
+    "preloadFileSize": 1000
+  },
+  "telemetry.enable": false
+}

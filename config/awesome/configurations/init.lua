@@ -1,0 +1,5 @@
+require("configurations.autostart")
+require("configurations.layouts")
+require("configurations.desktop")
+require("configurations.keys")
+require("configurations.rules")

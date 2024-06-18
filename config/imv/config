@@ -1,0 +1,27 @@
+# ▪  • ▌ ▄ ·.  ▌ ▐·
+# ██ ·██ ▐███▪▪█·█▌
+# ▐█·▐█ ▌▐▌▐█·▐█▐█•
+# ▐█▌██ ██▌▐█▌ ███ 
+# ▀▀▀▀▀ █▪▀▀▀. ▀  
+# Created by: Dang Minh Ngo
+# Github: @dm1nh
+# Email: dangminhngo.dev@gmail.com
+
+# Direwolf Ghost for imv
+# ~/.config/imv/config
+
+# styling
+[options]
+background = #181820
+fullscreen = false
+overlay = true
+overlay_text_color = #dcd5ac
+overlay_background_color = #1a1a22
+overlay_background_alpha = ff
+overlay_font = Cosmos Nerd Font Medium:11
+overlay_position_bottom = false
+
+# bindings
+[binds]
+j = next
+k = prev

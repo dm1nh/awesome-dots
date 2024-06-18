@@ -1,0 +1,50 @@
+import = ["~/.config/alacritty/theme.toml"]
+
+[font]
+size = 12.5
+
+[font.bold]
+family = "Cosmos Nerd Font"
+style = "ExtraBold"
+
+[font.bold_italic]
+family = "Cosmos Nerd Font"
+style = "ExtraBold Italic"
+
+[font.italic]
+family = "Cosmos Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "Cosmos Nerd Font"
+style = "Medium"
+
+[font.offset]
+x = 0
+y = 0
+
+[mouse]
+hide_when_typing = true
+
+[scrolling]
+history = 2000
+multiplier = 3
+
+[shell]
+program = "/bin/fish"
+args = ["-l", "-c", "tmux"]
+
+[env]
+TERM = "alacritty"
+
+[window]
+dynamic_title = true
+title = "alacritty"
+
+[window.class]
+general = "alacritty"
+instance = "alacritty"
+
+[window.padding]
+x = 0
+y = 0
