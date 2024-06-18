@@ -24,7 +24,7 @@ fi
 
 paru -Syy --noconfirm
 paru -Sy --noconfirm archlinux-keyring
-paru -S --noconfirm - <./scriptdata/pkgs.txt
+paru -S --noconfirm --needed - <./scriptdata/pkgs.txt
 
 sudo systemctl enable sddm.service
 
