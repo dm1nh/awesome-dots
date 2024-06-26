@@ -1,3 +1,9 @@
+Utils.on_very_lazy(function()
+  vim.filetype.add({
+    extension = { mdx = "markdown.mdx" },
+  })
+end)
+
 return {
   {
     "stevearc/conform.nvim",
@@ -30,6 +36,7 @@ return {
     opts = {
       linters_by_ft = {
         markdown = { "markdownlint" },
+        ["markdown.mdx"] = { "markdownlint" },
       },
     },
   },
