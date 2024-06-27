@@ -10,7 +10,7 @@ return function()
     {
       widget = wibox.widget.textclock,
       format = "%H:%M",
-      font = beautiful.font_sans .. " SemiBold 12",
+      font = beautiful.font_sans .. " Bold 14",
     },
   })
 
