@@ -1,43 +1,47 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
-vim.opt.mouse = "" -- disable mouse
+local opt = vim.opt
 
-vim.opt.cmdheight = 0
+opt.mouse = "" -- disable mouse
 
-vim.opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus" -- Sync with system clipboard
+opt.cmdheight = 0
 
-vim.opt.nu = true
-vim.opt.relativenumber = false
+opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus" -- Sync with system clipboard
 
-vim.opt.completeopt = "menu,menuone,noselect"
+opt.number = true
+opt.relativenumber = false
 
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
+opt.completeopt = "menu,menuone,noselect"
 
-vim.opt.breakindent = false
-vim.opt.smartindent = false
+opt.tabstop = 2
+opt.softtabstop = 2
+opt.shiftwidth = 2
+opt.expandtab = true
 
-vim.opt.wrap = false
+opt.breakindent = false
+opt.smartindent = false
 
-vim.opt.swapfile = false
-vim.opt.backup = false
-vim.opt.undofile = true
+opt.wrap = false
 
-vim.opt.hlsearch = true
-vim.opt.incsearch = true
+opt.swapfile = false
+opt.backup = false
+opt.undofile = true
 
-vim.opt.termguicolors = true
+opt.hlsearch = true
+opt.incsearch = true
 
-vim.opt.scrolloff = 4
-vim.opt.signcolumn = "yes"
-vim.opt.isfname:append("@-@")
+opt.termguicolors = true
 
-vim.opt.updatetime = 50
-vim.opt.timeoutlen = 300
+opt.scrolloff = 4
+opt.signcolumn = "yes"
+opt.isfname:append("@-@")
 
-vim.opt.laststatus = 2
+opt.updatetime = 50
+opt.timeoutlen = 300
 
-vim.opt.guicursor = "n-v-c-sm:block-Cursor/lCursor,i-ci-ve:block-iCursor,r-cr-o:block-rCursor"
+opt.laststatus = 2
+
+opt.guicursor = "n-v-c-sm:block-Cursor/lCursor,i-ci-ve:block-iCursor,r-cr-o:block-rCursor"
+
+opt.jumpoptions = "view"
