@@ -51,21 +51,25 @@ function M.get_pkg_path(pkg, path, opts)
   return ret
 end
 
+--- This extends a deeply nested list with a key in a table
+--- that is a dot-separated string.
+--- The nested list will be created if it does not exist.
 ---@generic T
----@param list T[]
----@param add T[]
----@return T[]
-function M.extend(list, add)
-  local idx = {}
-  for _, v in ipairs(list) do
-    idx[v] = v
-  end
-  for _, a in ipairs(add) do
-    if not idx[a] then
-      table.insert(list, a)
+---@param t T[]
+---@param key string
+---@param values T[]
+---@return T[]?
+function M.extend(t, key, values)
+  local keys = vim.split(key, ".", { plain = true })
+  for i = 1, #keys do
+    local k = keys[i]
+    t[k] = t[k] or {}
+    if type(t) ~= "table" then
+      return
     end
+    t = t[k]
   end
-  return list
+  return vim.list_extend(t, values)
 end
 
 -- notify
