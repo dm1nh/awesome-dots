@@ -10,10 +10,10 @@
  */
 
 configuration {
-  font:                           "Cosmos Nerd Font Regular 14";
+  font:                           "Cosmos Nerd Font Regular 13.5";
   show-icons:                     true;
   icon-theme:                     "Papirus-Dark";
-  display-drun:                   "Applications";
+  display-drun:                   "Documents";
   drun-display-format:            "{name}";
   disable-history:                false;
   sidebar-mode:                   false;
@@ -39,7 +39,7 @@ prompt {
   background-color:               @violet1;
   text-color:                     @ink1;
   border-radius:                  4px;
-  font:                           "Cosmos Nerd Font Regular 14";
+  font:                           "Cosmos Nerd Font Regular 13.5";
 }
 
 textbox-prompt-colon {
@@ -57,7 +57,7 @@ entry {
   placeholder-color:              @gray1;
   expand:                         true;
   horizontal-align:               0;
-  placeholder:                    "Search clients...";
+  placeholder:                    "Search pdf...";
   padding:                        6px 12px;
   blink:                          false;
 }

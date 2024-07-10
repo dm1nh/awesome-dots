@@ -11,7 +11,7 @@
 
 configuration {
   show-icons:                     false;
-  font:                           "Cosmos Nerd Font Regular 14";
+  font:                           "Cosmos Nerd Font Regular 13.5";
   disable-history:                false;
   sidebar-mode:                   false;
 }
@@ -29,7 +29,7 @@ window {
   border:                         2px;
   border-color:                   @yellow1;
   location:                       center;
-  width:                          236px;
+  width:                          350px;
   x-offset:                       0px;
   y-offset:                       0px;
 }
@@ -44,7 +44,7 @@ prompt {
 
 textbox-prompt-colon {
   expand:                         false;
-  str:                            "Colorpicker";
+  str:                            "Screenshot";
   background-color:               @yellow1;
   text-color:                     @ink3;
   padding:                        4px 8px;
@@ -66,7 +66,7 @@ inputbar {
 }
 
 listview {
-  columns:                        5;
+  columns:                        3;
   lines:                          1;
   spacing:                        8px;
   cycle:                          true;

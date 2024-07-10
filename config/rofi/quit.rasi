@@ -11,7 +11,7 @@
 
 configuration {
   show-icons:                     false;
-  font:                           "Cosmos Nerd Font Regular 14";
+  font:                           "Cosmos Nerd Font Regular 13.5";
   disable-history:                false;
   sidebar-mode:                   false;
 }

@@ -10,7 +10,7 @@
  */
 
 configuration {
-  font:                           "Cosmos Nerd Font Regular 14";
+  font:                           "Cosmos Nerd Font Regular 13.5";
   show-icons:                     true;
   icon-theme:                     "Papirus-Dark";
   display-drun:                   "Applications";
@@ -39,7 +39,7 @@ prompt {
   background-color:               @blue1;
   text-color:                     @ink1;
   border-radius:                  4px;
-  font:                           "Cosmos Nerd Font Regular 14";
+  font:                           "Cosmos Nerd Font Regular 13.5";
 }
 
 textbox-prompt-colon {

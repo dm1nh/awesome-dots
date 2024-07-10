@@ -58,10 +58,11 @@ screenshot() {
 
 	# Options
 	fullscreen=""
+  window=""
 	selection=""
 
 	# Variables passed to dmenu
-	opts="$fullscreen\n$selection"
+	opts="$fullscreen\n$window\n$selection"
 
 	opt=$(echo -e $opts | rofi -dmenu -p "scrot" -theme $theme)
 
@@ -73,6 +74,10 @@ screenshot() {
 	$fullscreen)
 		sleep 0.5
 		~/.config/awesome/utils/screenshot.sh --fullscreen
+		;;
+	$window)
+		sleep 0.5
+		~/.config/awesome/utils/screenshot.sh --window
 		;;
 	$selection)
 		sleep 0.5

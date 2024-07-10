@@ -11,7 +11,7 @@
 
 configuration {
   show-icons:                     false;
-  font:                           "Cosmos Nerd Font Regular 14";
+  font:                           "Cosmos Nerd Font Regular 13.5";
   disable-history:                false;
   sidebar-mode:                   false;
 }
@@ -44,7 +44,7 @@ prompt {
 
 textbox-prompt-colon {
   expand:                         false;
-  str:                            "Colorpicker";
+  str:                            "Record";
   background-color:               @magenta1;
   text-color:                     @ink3;
   padding:                        4px 8px;
