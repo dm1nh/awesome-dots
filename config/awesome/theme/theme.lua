@@ -12,7 +12,7 @@ local palette = require("theme.palette")
 theme.font_sans = "Cosmos Nerd Font"
 theme.font = theme.font_sans .. " Regular 12"
 theme.font_icon = "Material Icons Round"
-theme.font_icon_default = theme.font_icon .. " 14"
+theme.font_icon_default = theme.font_icon .. " 13.5"
 
 -- colors
 theme.transparent = "#00000000"
@@ -49,12 +49,12 @@ theme.layout_dwindle = icons.layouts.dwindle
 theme.layout_floating = icons.layouts.floating
 theme.layout_max = icons.layouts.max
 
-theme.master_width_factor = 0.5275
+theme.master_width_factor = 0.535
 theme.master_count = 1
 theme.column_count = 1
 
 -- wibar
-theme.wibar_height = dpi(26)
+theme.wibar_height = dpi(20)
 
 -- gaps
 theme.useless_gap = 0

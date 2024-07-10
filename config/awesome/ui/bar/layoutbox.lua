@@ -42,8 +42,8 @@ return function(s)
       valign = "center",
       {
         widget = wibox.container.margin,
-        top = dpi(5),
-        bottom = dpi(5),
+        top = dpi(3),
+        bottom = dpi(3),
         layoutbox,
       },
     },

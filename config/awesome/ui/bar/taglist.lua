@@ -35,10 +35,9 @@ return function(s)
   local taglist = awful.widget.taglist({
     screen = s,
     filter = awful.widget.taglist.filter.all,
-    layout = { layout = wibox.layout.fixed.horizontal, spacing = dpi(6) },
+    layout = { layout = wibox.layout.fixed.horizontal, spacing = dpi(8) },
     widget_template = {
       widget = wibox.container.margin,
-      forced_width = beautiful.wibar_height,
       forced_height = beautiful.wibar_height,
       create_callback = function(self, c3, _)
         self.indicator = wibox.widget({
@@ -48,7 +47,7 @@ return function(s)
           {
             widget = wibox.container.background,
             forced_height = dpi(6),
-            forced_width = dpi(32),
+            forced_width = dpi(24),
             shape = helpers.ui.rrect(dpi(2)),
           },
         })
