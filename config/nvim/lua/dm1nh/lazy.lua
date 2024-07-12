@@ -20,6 +20,7 @@ require("lazy").setup({
     -- { import = "dm1nh.plugins.extras.dap.core" },
 
     -- languages
+    { import = "dm1nh.plugins.extras.lang.astro" },
     { import = "dm1nh.plugins.extras.lang.clangd" },
     { import = "dm1nh.plugins.extras.lang.cmake" },
     { import = "dm1nh.plugins.extras.lang.docker" },
