@@ -141,6 +141,7 @@ return {
       end
 
       -- toggle dotfiles
+      local hide_patterns = { "node_modules" }
       local show_dotfiles = false
 
       local filter_show = function()
@@ -148,7 +149,7 @@ return {
       end
 
       local filter_hide = function(fs_entry)
-        return not vim.startswith(fs_entry.name, ".")
+        return not vim.startswith(fs_entry.name, ".") and not vim.tbl_contains(hide_patterns, fs_entry.name)
       end
 
       local gio_open = function()

@@ -1,6 +1,6 @@
 return {
   { -- galax colorscheme
-    dir = "~/repos/galax.nvim",
+    dir = "~/sides/galax.nvim",
     lazy = false,
     priority = 1000,
     config = function()
