@@ -47,7 +47,7 @@ return function(s)
           {
             widget = wibox.container.background,
             forced_height = dpi(6),
-            forced_width = dpi(24),
+            forced_width = dpi(20),
             shape = helpers.ui.rrect(dpi(2)),
           },
         })
