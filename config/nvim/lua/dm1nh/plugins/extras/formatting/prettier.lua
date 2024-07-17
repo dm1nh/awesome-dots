@@ -19,6 +19,7 @@ return {
     optional = true,
     opts = {
       formatters_by_ft = {
+        ["astro"] = { "prettier" },
         ["javascript"] = { "prettier" },
         ["javascriptreact"] = { "prettier" },
         ["typescript"] = { "prettier" },
