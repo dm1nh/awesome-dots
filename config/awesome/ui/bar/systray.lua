@@ -8,6 +8,8 @@ local helpers = require("helpers")
 return function()
   local systray = wibox.widget.systray({
     base_size = beautiful.systray_icon_size,
+    forced_width = beautiful.systray_icon_size,
+    forced_height = beautiful.systray_icon_size,
   })
 
   local widget = wibox.widget({
@@ -26,7 +28,7 @@ return function()
 
   local arrow = wibox.widget({
     widget = wibox.container.background,
-    forced_width = dpi(28),
+    forced_width = beautiful.wibar_height,
     forced_height = beautiful.wibar_height,
     {
       widget = wibox.container.place,

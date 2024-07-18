@@ -12,7 +12,7 @@ local palette = require("theme.palette")
 theme.font_sans = "Cosmos Nerd Font"
 theme.font = theme.font_sans .. " Regular 12"
 theme.font_icon = "Material Icons Round"
-theme.font_icon_default = theme.font_icon .. " 13.5"
+theme.font_icon_default = theme.font_icon .. " 16"
 
 -- colors
 theme.transparent = "#00000000"
