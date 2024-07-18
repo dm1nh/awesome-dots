@@ -54,7 +54,7 @@ theme.master_count = 1
 theme.column_count = 1
 
 -- wibar
-theme.wibar_height = dpi(20)
+theme.wibar_height = dpi(24)
 
 -- gaps
 theme.useless_gap = 0
@@ -72,13 +72,13 @@ theme.tooltip_gaps = dpi(4)
 theme.tooltip_opacity = 0.8
 
 -- Borders
-theme.border_width = 1
+theme.border_width = 0
 theme.border_radius = 6
 theme.border_color_floating_active = theme.blue1
 theme.border_color_floating_normal = theme.ink4
-theme.border_color_urgent = theme.red1
-theme.border_color_active = theme.accent
-theme.border_color_normal = theme.transparent
+-- theme.border_color_urgent = theme.red1
+-- theme.border_color_active = theme.accent
+-- theme.border_color_normal = theme.transparent
 
 -- Opacity, enabled if xcompmgr is installed
 -- theme.opacity_normal = 0.8
