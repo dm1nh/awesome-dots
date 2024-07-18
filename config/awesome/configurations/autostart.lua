@@ -21,8 +21,9 @@ local function autostart()
   -- polkit agent
   helpers.run.run_once_ps("polkit-kde-authentication-agent-1", "/usr/lib/polkit-kde-authentication-agent-1")
 
-  -- stuff
+  -- systray applets
   helpers.run.run_once_grep("nm-applet")
+  helpers.run.run_once_grep("blueman-applet")
 end
 
 autostart()

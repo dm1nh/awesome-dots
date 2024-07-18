@@ -60,8 +60,8 @@ theme.wibar_height = dpi(24)
 theme.useless_gap = 0
 
 --- systray
-theme.systray_icon_size = dpi(10)
-theme.systray_icon_spacing = dpi(16)
+theme.systray_icon_size = dpi(16)
+theme.systray_icon_spacing = dpi(12)
 theme.bg_systray = theme.ink_dark
 
 -- Tooltips

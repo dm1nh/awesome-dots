@@ -4,7 +4,6 @@ local dpi = beautiful.xresources.apply_dpi
 local wibox = require("wibox")
 
 -- components
-local bluetooth = require("ui.bar.bluetooth")
 local clock = require("ui.bar.clock")
 local dnd = require("ui.bar.dnd")
 local idle_inhibitor = require("ui.bar.idle-inhibitor")
@@ -47,7 +46,6 @@ return function(s)
             systray(),
             record(),
             volume(),
-            bluetooth(),
             idle_inhibitor(),
             nightlight(),
             dnd(),
