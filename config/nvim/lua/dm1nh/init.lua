@@ -1,5 +1,0 @@
-_G.Utils = require("dm1nh.utils")
-require("dm1nh.opts")
-require("dm1nh.keys")
-require("dm1nh.autocmds")
-require("dm1nh.lazy")
