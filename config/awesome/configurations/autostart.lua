@@ -24,6 +24,9 @@ local function autostart()
   -- systray applets
   helpers.run.run_once_grep("nm-applet")
   helpers.run.run_once_grep("blueman-applet")
+
+  -- ibus
+  helpers.run.run_once_grep("ibus")
 end
 
 autostart()

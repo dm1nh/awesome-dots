@@ -22,6 +22,8 @@ gtk3
 gtk4
 gvfs
 i3lock
+ibus
+ibus-bamboo
 imagemagick
 imv
 jq

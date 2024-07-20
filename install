@@ -54,7 +54,7 @@ ln -s ~/.dots/config ~/.config
 sudo cp -R ./settings/xorg.conf.d /etc/X11/
 sudo cp -R ./settings/sddm.conf.d /etc/
 sudo cp ./config/sugar-candy/theme.conf /usr/share/sddm/themes/Sugar-Candy/
-cp ./settings/.gitconfig ~/
+cp ./settings/{.gitconfig,.xprofile} ~/
 cp -R ./settings/.icons ~/
 
 # Remove default cursor theme
