@@ -72,6 +72,10 @@ M.override_icons = {
 		},
 	},
 	file = {
+		["astro.config.mjs"] = {
+			glyph = "",
+			hl = "MiniIconsAzure",
+		},
 		[".eslintrc.js"] = {
 			glyph = "󰱺",
 			hl = "MiniIconsPurple",
@@ -89,6 +93,18 @@ M.override_icons = {
 			hl = "MiniIconsPurple",
 		},
 		[".eslintrc.yml"] = {
+			glyph = "󰱺",
+			hl = "MiniIconsPurple",
+		},
+		["eslint.config.js"] = {
+			glyph = "󰱺",
+			hl = "MiniIconsPurple",
+		},
+		["eslint.config.mjs"] = {
+			glyph = "󰱺",
+			hl = "MiniIconsPurple",
+		},
+		["eslint.config.cjs"] = {
 			glyph = "󰱺",
 			hl = "MiniIconsPurple",
 		},
@@ -168,7 +184,19 @@ M.override_icons = {
 			glyph = "󰬚",
 			hl = "MiniIconsCyan",
 		},
+		["tsconfig.json"] = {
+			glyph = "󰘦",
+			hl = "MiniIconsBlue",
+		},
 		["tailwind.config.js"] = {
+			glyph = "󱏿",
+			hl = "MiniIconsCyan",
+		},
+		["tailwind.config.mjs"] = {
+			glyph = "󱏿",
+			hl = "MiniIconsCyan",
+		},
+		["tailwind.config.cjs"] = {
 			glyph = "󱏿",
 			hl = "MiniIconsCyan",
 		},
@@ -179,6 +207,14 @@ M.override_icons = {
 		["webpack"] = {
 			glyph = "󰜫",
 			hl = "MiniIconsBlue",
+		},
+		["README.md"] = {
+			glyph = "",
+			hl = "MiniIconsYellow",
+		},
+		["readme.md"] = {
+			glyph = "",
+			hl = "MiniIconsYellow",
 		},
 	},
 	extension = {
@@ -241,6 +277,10 @@ M.override_icons = {
 		["ts"] = {
 			glyph = "󰛦",
 			hl = "MiniIconsBlue",
+		},
+		["d.ts"] = {
+			glyph = "󰛦",
+			hl = "MiniIconsGrey",
 		},
 		["test.ts"] = {
 			glyph = "󰳪",
