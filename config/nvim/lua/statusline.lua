@@ -70,10 +70,6 @@ function M.diff()
 	return vim.b.gitsigns_status or ""
 end
 
-function M.branch()
-	return vim.b.gitsigns_head ~= nil and icons.git.branch .. " " .. vim.b.gitsigns_head or ""
-end
-
 function M.location()
 	local line = vim.fn.line(".")
 	local col = vim.fn.virtcol(".")
@@ -126,8 +122,6 @@ function M.active()
 		M.lsp(),
 		sep(),
 		M.location(),
-		sep(),
-		M.branch(),
 		sep(),
 	})
 end
