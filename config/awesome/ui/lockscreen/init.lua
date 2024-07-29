@@ -12,6 +12,7 @@ lock_screen.init = function()
     -- return password == "awesome"
   end
   require("ui.lockscreen.lockscreen")
+  require("awful.autofocus")
 end
 
 return lock_screen

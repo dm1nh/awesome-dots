@@ -35,10 +35,9 @@ return function(s)
   local taglist = awful.widget.taglist({
     screen = s,
     filter = awful.widget.taglist.filter.all,
-    layout = { layout = wibox.layout.fixed.horizontal, spacing = beautiful.wibar_height / 4 },
+    layout = { layout = wibox.layout.fixed.horizontal, spacing = beautiful.wibar_height / 3 },
     widget_template = {
       widget = wibox.container.margin,
-      forced_height = beautiful.wibar_height,
       create_callback = function(self, c3, _)
         self.indicator = wibox.widget({
           widget = wibox.container.place,
@@ -46,7 +45,7 @@ return function(s)
           valign = "center",
           {
             widget = wibox.container.background,
-            forced_height = beautiful.wibar_height / 4,
+            forced_height = beautiful.wibar_height / 3,
             forced_width = beautiful.wibar_height,
             shape = helpers.ui.rrect(beautiful.wibar_height / 4),
           },
