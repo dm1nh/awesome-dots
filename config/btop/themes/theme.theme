@@ -10,10 +10,10 @@
 theme[main_bg]="#16161d"
 
 # Main text color
-theme[main_fg]="#dcd5ac"
+theme[main_fg]="#dcdac9"
 
 # Title color for boxes
-theme[title]="#dcd5ac"
+theme[title]="#dcdac9"
 
 # Highlight color for keyboard shortcuts
 theme[hi_fg]="#e46876"
@@ -25,10 +25,10 @@ theme[selected_bg]="#1f1f28"
 theme[selected_fg]="#e6c384"
 
 # Color of inactive/disabled text
-theme[inactive_fg]="#e5ddb0"
+theme[inactive_fg]="#dedccd"
 
 # Color of text appearing on top of graphs, i.e uptime and current network graph scaling
-theme[graph_text]="#dcd5ac"
+theme[graph_text]="#dcdac9"
 
 # Misc colors for processes box including mini cpu graphs, details memory graph and details status text
 theme[proc_misc]="#b3d57d"

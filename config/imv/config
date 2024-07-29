@@ -15,7 +15,7 @@
 background = #181820
 fullscreen = false
 overlay = true
-overlay_text_color = #dcd5ac
+overlay_text_color = #dcdac9
 overlay_background_color = #1a1a22
 overlay_background_alpha = ff
 overlay_font = Cosmos Nerd Font Medium:11

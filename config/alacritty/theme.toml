@@ -2,19 +2,19 @@
 # ~/.config/alacritty/theme.toml
 
 [colors.cursor]
-cursor = "#dcd5ac"
+cursor = "#dcdac9"
 text = "#181820"
 
 [colors.footer_bar]
-background = "#d5cea3"
+background = "#c8c4aa"
 foreground = "#16161d"
 
 [colors.hints.end]
 background = "#16161d"
-foreground = "#dcd5ac"
+foreground = "#dcdac9"
 
 [colors.hints.start]
-background = "#dcd5ac"
+background = "#dcdac9"
 foreground = "#16161d"
 
 [colors.line_indicator]
@@ -22,30 +22,30 @@ background = "None"
 foreground = "None"
 
 [colors.bright]
-black = "#7e7d74"
+black = "#9a9991"
 blue = "#92abde"
 cyan = "#89bfaa"
 green = "#c2dd96"
 magenta = "#da97ad"
 red = "#e8808b"
-white = "#e5ddb0"
+white = "#dedccd"
 yellow = "#ebce9c"
 
 [colors.normal]
-black = "#53524c"
+black = "#686760"
 blue = "#7e9cd8"
 cyan = "#6caf95"
 green = "#b3d57d"
 magenta = "#d27e99"
 red = "#e46876"
-white = "#dcd5ac"
+white = "#dcdac9"
 yellow = "#e6c384"
 
 [colors.primary]
 background = "#16161d"
-bright_foreground = "#e5ddb0"
-dim_foreground = "#d5cea3"
-foreground = "#dcd5ac"
+bright_foreground = "#dedccd"
+dim_foreground = "#c8c4aa"
+foreground = "#dcdac9"
 
 [colors.search.focused_match]
 background = "#b3d57d"
@@ -57,9 +57,9 @@ foreground = "#181820"
 
 [colors.selection]
 background = "#1a1a22"
-text = "#dcd5ac"
+text = "#dcdac9"
 
 [colors.vi_mode_cursor]
-cursor = "#dcd5ac"
+cursor = "#dcdac9"
 text = "#181820"
     
