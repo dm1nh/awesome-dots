@@ -10,7 +10,7 @@ local dpi = beautiful.xresources.apply_dpi
 -- global configs
 naughty.persistence_enabled = true
 naughty.config.defaults.ontop = true
-naughty.config.defaults.timeout = 10
+naughty.config.defaults.timeout = 6
 naughty.config.defaults.title = "System notification"
 naughty.config.defaults.position = "bottom_right"
 
@@ -262,10 +262,10 @@ naughty.connect_signal("request::display", function(n)
     naughty.destroy_all_notifications(nil, 1)
   end
 
-  -- play sound
-  if not _G.dnd_enabled then
-    awful.spawn("canberra-gtk-play -i bell", false)
-  end
+  -- -- uncommnet this to play sound
+  -- if not _G.dnd_enabled then
+  --   awful.spawn("canberra-gtk-play -i bell", false)
+  -- end
 end)
 
 require("ui.notifications.error")
