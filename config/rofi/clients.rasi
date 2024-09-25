@@ -22,7 +22,7 @@ configuration {
 @import "./theme.rasi"
 
 window {
-  background-color:               @ink0;
+  background-color:               @dark0;
   text-color:                     @white1;
   border:                         2px;
   border-color:                   @blue1;
@@ -37,7 +37,7 @@ prompt {
   enabled:                        true;
   padding:                        6px 12px;
   background-color:               @blue1;
-  text-color:                     @ink1;
+  text-color:                     @dark1;
   border-radius:                  4px;
   font:                           "Astro Nerd Font Regular 13.5";
 }
@@ -46,13 +46,13 @@ textbox-prompt-colon {
   padding:                        6px 12px;
   border-radius:                  4px;
   background-color:               @blue1;
-  text-color:                     @ink3;
+  text-color:                     @dark1;
   expand:                         false;
   str:                            " :: ";
 }
 
 entry {
-  background-color:               @ink3;
+  background-color:               @dark1;
   text-color:                     @white1;
   placeholder-color:              @gray1;
   expand:                         true;
@@ -64,7 +64,7 @@ entry {
 
 inputbar {
   children:                       [ prompt, entry ];
-  background-color:               @ink0;
+  background-color:               @dark0;
   text-color:                     @white2;
   expand:                         false;
   border-radius:                  4px;
@@ -83,14 +83,14 @@ listview {
 }
 
 mainbox {
-  background-color:               @ink0;
+  background-color:               @dark0;
   children:                       [ inputbar, listview ];
   spacing:                        8px;
   padding:                        8px;
 }
 
 element {
-  background-color:               @ink3;
+  background-color:               @dark1;
   text-color:                     @white0;
   orientation:                    horizontal;
   border-radius:                  4px;
@@ -116,5 +116,5 @@ element-text {
 
 element selected {
   background-color:               @blue1;
-  text-color:                     @ink0;
+  text-color:                     @dark0;
 }

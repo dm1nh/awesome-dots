@@ -4,13 +4,13 @@
 * {
   none:         #00000000;
   accent:       #98c379;
-  ink:          ${ink};
-  ink0:         ${ink0};
-  ink1:         ${ink1};
-  ink2:         ${ink2};
-  ink3:         ${ink3};
-  ink4:         ${ink4};
-  ink5:         ${ink5};
+  dark:          #0c0d10;
+  dark0:         #14161a;
+  dark1:         #1c1f24;
+  dark2:         #282c34;
+  dark1:         #3e4148;
+  dark4:         #53565d;
+  dark5:         #696b71;
   white:        #ffffff;
   white0:       #eaeaeb;
   white1:       #bfc0c2;

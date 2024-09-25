@@ -19,7 +19,7 @@ configuration {
 @import "./theme.rasi"
 
 * {
-  background-color:               @ink0;
+  background-color:               @dark0;
   text-color:                     @white1;
 }
 
@@ -37,7 +37,7 @@ window {
 prompt {
   enabled:                        true;
   padding:                        4px 8px;
-  background-color:               @ink3;
+  background-color:               @dark1;
   text-color:                     @magenta1;
   border-radius:                  4px;
 }
@@ -46,7 +46,7 @@ textbox-prompt-colon {
   expand:                         false;
   str:                            "Record";
   background-color:               @magenta1;
-  text-color:                     @ink3;
+  text-color:                     @dark1;
   padding:                        4px 8px;
   border-radius:                  4px;
 }
@@ -54,7 +54,7 @@ textbox-prompt-colon {
 inputbar {
   children:                       [ textbox-prompt-colon, prompt ];
   spacing:                        8px;
-  background-color:               @ink0;
+  background-color:               @dark0;
   text-color:                     @white2;
   expand:                         false;
   border:                         0px;
@@ -75,14 +75,14 @@ listview {
 }
 
 mainbox {
-  background-color:               @ink0;
+  background-color:               @dark0;
   children:                       [ inputbar, listview ];
   spacing:                        8px;
   padding:                        8px;
 }
 
 element {
-  background-color:               @ink3;
+  background-color:               @dark1;
   text-color:                     @white0;
   orientation:                    vertical;
   border-radius:                  4px;
@@ -100,17 +100,17 @@ element-text {
 
 element normal.urgent,
 element alternate.urgent {
-  text-color:                     @ink0;
+  text-color:                     @dark0;
   border-radius:                  4px;
 }
 
 element normal.active,
 element alternate.active {
   background-color:               @magenta1;
-  text-color:                     @ink0;
+  text-color:                     @dark0;
 }
 
 element selected {
   background-color:               @magenta1;
-  text-color:                     @ink0;
+  text-color:                     @dark0;
 }
