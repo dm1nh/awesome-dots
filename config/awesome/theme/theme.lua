@@ -19,8 +19,8 @@ theme.transparent = "#00000000"
 theme = gears.table.crush(theme, palette)
 
 -- black
-theme.color0 = theme.gray1
-theme.color8 = theme.gray2
+theme.color0 = theme.dark4
+theme.color8 = theme.dark5
 -- red
 theme.color1 = theme.red1
 theme.color9 = theme.red2
@@ -62,10 +62,10 @@ theme.useless_gap = 1
 --- systray
 theme.systray_icon_size = dpi(16)
 theme.systray_icon_spacing = dpi(12)
-theme.bg_systray = theme.ink_dark
+theme.bg_systray = theme.dark
 
 -- Tooltips
-theme.tooltip_bg = theme.ink1
+theme.tooltip_bg = theme.dark1
 theme.tooltip_fg = theme.white1
 theme.tooltip_shape = helpers.ui.rrect(dpi(2))
 theme.tooltip_gaps = dpi(4)
@@ -75,10 +75,10 @@ theme.tooltip_opacity = 0.8
 theme.border_width = 2
 theme.border_radius = 8
 theme.border_color_floating_active = theme.blue1
-theme.border_color_floating_normal = theme.ink4
+theme.border_color_floating_normal = theme.dark4
 theme.border_color_urgent = theme.red1
 theme.border_color_active = theme.accent
-theme.border_color_normal = theme.ink4
+theme.border_color_normal = theme.dark4
 
 -- Opacity, enabled if xcompmgr is installed
 -- theme.opacity_normal = 0.8
@@ -86,19 +86,19 @@ theme.border_color_normal = theme.ink4
 
 -- Notifications
 theme.notification_spacing = dpi(4)
-theme.notification_bg = theme.ink_dark
+theme.notification_bg = theme.dark0
 theme.notification_border_width = 0
 theme.notification_border_color = theme.transparent
 
 -- Tasklist
 theme.tasklist_plain_task_name = true
 theme.tasklist_fg_normal = theme.white2
-theme.tasklist_bg_normal = theme.ink0
+theme.tasklist_bg_normal = theme.dark0
 theme.tasklist_fg_focus = theme.accent
-theme.tasklist_bg_focus = theme.ink1
-theme.tasklist_fg_urgent = theme.ink1
+theme.tasklist_bg_focus = theme.dark1
+theme.tasklist_fg_urgent = theme.dark1
 theme.tasklist_bg_urgent = theme.red1
-theme.tasklist_fg_minimize = theme.ink1
+theme.tasklist_fg_minimize = theme.dark1
 theme.tasklist_bg_minimize = theme.blue1
 theme.tasklist_shape = helpers.ui.rrect(dpi(2))
 

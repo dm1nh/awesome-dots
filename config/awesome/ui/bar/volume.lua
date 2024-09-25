@@ -51,7 +51,7 @@ return function()
         t.text = "Volume: " .. value .. "%"
       end)
     else
-      icon.markup = helpers.ui.colorize_text("", beautiful.gray1)
+      icon.markup = helpers.ui.colorize_text("", beautiful.dark4)
       t.text = "Awkward silence"
     end
   end

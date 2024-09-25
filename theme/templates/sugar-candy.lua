@@ -58,7 +58,7 @@ MainColor="${white1}"
 AccentColor="${accent}"
 ## Used for elements in focus/hover/pressed. Should be contrasting to the background and the MainColor to achieve the best effect.
 
-BackgroundColor="${ink1}"
+BackgroundColor="${dark1}"
 ## Used for the user and session selection background as well as for ScreenPadding and FormBackground when either is true. If PartialBlur and FormBackground are both enabled this color will blend with the blur effect.
 
 OverrideLoginButtonTextColor=""

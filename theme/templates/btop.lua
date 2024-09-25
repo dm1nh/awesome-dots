@@ -19,7 +19,7 @@ M.gen = function(schema)
 # Use "start", "mid" and "end" for three color gradient
 
 # Main background, empty for terminal default, need to be empty if you want transparent background
-theme[main_bg]="${ink0}"
+theme[main_bg]="${dark1}"
 
 # Main text color
 theme[main_fg]="${white1}"
@@ -31,7 +31,7 @@ theme[title]="${white1}"
 theme[hi_fg]="${red1}"
 
 # Background color of selected items
-theme[selected_bg]="${ink3}"
+theme[selected_bg]="${dark3}"
 
 # Foreground color of selected items
 theme[selected_fg]="${yellow1}"
@@ -46,19 +46,19 @@ theme[graph_text]="${white1}"
 theme[proc_misc]="${accent}"
 
 # Cpu box outline color
-theme[cpu_box]=${ink3}""
+theme[cpu_box]=${dark3}""
 
 # Memory/disks box outline color
-theme[mem_box]="${ink3}"
+theme[mem_box]="${dark3}"
 
 # Net up/down box outline color
-theme[net_box]="${ink3}"
+theme[net_box]="${dark3}"
 
 # Processes box outline color
-theme[proc_box]="${ink3}"
+theme[proc_box]="${dark3}"
 
 # Box divider line and small boxes line color
-theme[div_line]="${ink3}"
+theme[div_line]="${dark3}"
 
 # Temperature graph colors
 theme[temp_start]="${green1}"

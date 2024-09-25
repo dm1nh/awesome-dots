@@ -58,7 +58,7 @@ return function(s)
         elseif #c3:clients() > 0 then -- occupied tag
           self.widget.children[1].bg = beautiful.blue1
         else -- empty and no-focused tag
-          self.widget.children[1].bg = beautiful.ink5
+          self.widget.children[1].bg = beautiful.dark2
         end
       end,
       update_callback = function(self, c3, _)
@@ -67,7 +67,7 @@ return function(s)
         elseif #c3:clients() > 0 then -- occupied tag
           self.widget.children[1].bg = beautiful.blue1
         else -- empty and no-focused tag
-          self.widget.children[1].bg = beautiful.ink5
+          self.widget.children[1].bg = beautiful.dark2
         end
       end,
     },

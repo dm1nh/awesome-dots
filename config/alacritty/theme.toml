@@ -1,65 +1,65 @@
-# Galax for Alacritty
+# Interstellar for Alacritty
 # ~/.config/alacritty/theme.toml
 
 [colors.cursor]
-cursor = "#dcdac9"
-text = "#181820"
+cursor = "#bfc0c2"
+text = "#1c1f24"
 
 [colors.footer_bar]
-background = "#c8c4aa"
-foreground = "#16161d"
+background = "#eaeaeb"
+foreground = "#14161a"
 
 [colors.hints.end]
-background = "#16161d"
-foreground = "#dcdac9"
+background = "#14161a"
+foreground = "#bfc0c2"
 
 [colors.hints.start]
-background = "#dcdac9"
-foreground = "#16161d"
+background = "#bfc0c2"
+foreground = "#14161a"
 
 [colors.line_indicator]
 background = "None"
 foreground = "None"
 
 [colors.bright]
-black = "#9a9991"
-blue = "#92abde"
-cyan = "#89bfaa"
-green = "#c2dd96"
-magenta = "#da97ad"
-red = "#e8808b"
-white = "#dedccd"
-yellow = "#ebce9c"
+black = "#696b71"
+blue = "#81bff2"
+cyan = "#84d7c3"
+green = "#adcf94"
+magenta = "#e493c2"
+red = "#e68991"
+white = "#a9abae"
+yellow = "#eacd95"
 
 [colors.normal]
-black = "#686760"
-blue = "#7e9cd8"
-cyan = "#6caf95"
-green = "#b3d57d"
-magenta = "#d27e99"
-red = "#e46876"
-white = "#dcdac9"
-yellow = "#e6c384"
+black = "#696b71"
+blue = "#61afef"
+cyan = "#65cdb4"
+green = "#98c379"
+magenta = "#dd78b3"
+red = "#e06c75"
+white = "#bfc0c2"
+yellow = "#e5c07b"
 
 [colors.primary]
-background = "#16161d"
-bright_foreground = "#dedccd"
-dim_foreground = "#c8c4aa"
-foreground = "#dcdac9"
+background = "#1c1f24"
+bright_foreground = "#a9abae"
+dim_foreground = "#eaeaeb"
+foreground = "#bfc0c2"
 
 [colors.search.focused_match]
-background = "#b3d57d"
-foreground = "#181820"
+background = "#98c379"
+foreground = "#1c1f24"
 
 [colors.search.matches]
-background = "#7e9cd8"
-foreground = "#181820"
+background = "#61afef"
+foreground = "#1c1f24"
 
 [colors.selection]
-background = "#1a1a22"
-text = "#dcdac9"
+background = "#282c34"
+text = "#bfc0c2"
 
 [colors.vi_mode_cursor]
-cursor = "#dcdac9"
-text = "#181820"
+cursor = "#bfc0c2"
+text = "#1c1f24"
     

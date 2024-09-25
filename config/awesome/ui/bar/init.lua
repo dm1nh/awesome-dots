@@ -29,7 +29,7 @@ return function(s)
     end,
     widget = {
       widget = wibox.container.background,
-      bg = beautiful.ink_dark,
+      bg = beautiful.dark,
       {
         widget = wibox.container.margin,
         margins = { left = beautiful.wibar_height / 2, right = beautiful.wibar_height / 2 },

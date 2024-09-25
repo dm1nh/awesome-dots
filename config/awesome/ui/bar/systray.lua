@@ -50,7 +50,7 @@ return function()
       icon.markup = helpers.ui.colorize_text("", beautiful.accent)
     else
       widget:set_visible(false)
-      icon.markup = helpers.ui.colorize_text("", beautiful.gray2)
+      icon.markup = helpers.ui.colorize_text("", beautiful.dark4)
     end
   end
 

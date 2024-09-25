@@ -34,7 +34,7 @@ return function()
     if enabled then
       icon.markup = helpers.ui.colorize_text("", beautiful.yellow1)
     else
-      icon.markup = helpers.ui.colorize_text("", beautiful.gray1)
+      icon.markup = helpers.ui.colorize_text("", beautiful.dark4)
     end
   end
 

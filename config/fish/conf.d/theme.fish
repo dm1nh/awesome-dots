@@ -1,20 +1,20 @@
-# Galax colorscheme for Fish
+# Interstellar colorscheme for Fish
 # ~/.config/fish/conf.d/theme.fish
 
 # --> special
-set -l fg dcdac9
-set -l sel 1a1a22
+set -l fg bfc0c2
+set -l sel 282c34
 
 # --> palette
-set -l red e46876
-set -l green b3d57d
-set -l yellow e6c384
+set -l red e06c75
+set -l green 98c379
+set -l yellow e5c07b
 set -l orange ffa066
-set -l blue 7e9cd8
-set -l purple 957fb8
-set -l magenta d27e99
-set -l cyan 6caf95
-set -l black 686760
+set -l blue 61afef
+set -l purple c678dd
+set -l magenta dd78b3
+set -l cyan 65cdb4
+set -l black 696b71
 
 # Syntax Highlighting
 set -g fish_color_normal $fg

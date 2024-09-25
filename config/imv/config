@@ -1,22 +1,13 @@
-# ▪  • ▌ ▄ ·.  ▌ ▐·
-# ██ ·██ ▐███▪▪█·█▌
-# ▐█·▐█ ▌▐▌▐█·▐█▐█•
-# ▐█▌██ ██▌▐█▌ ███ 
-# ▀▀▀▀▀ █▪▀▀▀. ▀  
-# Created by: Dang Minh Ngo
-# Github: @dm1nh
-# Email: dangminhngo.dev@gmail.com
-
-# Galax for imv
+# Interstellar for imv
 # ~/.config/imv/config
 
 # styling
 [options]
-background = #181820
+background = #1c1f24
 fullscreen = false
 overlay = true
-overlay_text_color = #dcdac9
-overlay_background_color = #1a1a22
+overlay_text_color = #bfc0c2
+overlay_background_color = #282c34
 overlay_background_alpha = ff
 overlay_font = Astro Nerd Font Medium:11
 overlay_position_bottom = false

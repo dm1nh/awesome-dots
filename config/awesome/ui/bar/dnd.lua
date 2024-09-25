@@ -39,7 +39,7 @@ return function()
         icon.markup = helpers.ui.colorize_text("", beautiful.amber1)
       end
     else
-      icon.markup = helpers.ui.colorize_text("", beautiful.gray1)
+      icon.markup = helpers.ui.colorize_text("", beautiful.dark4)
     end
   end
 

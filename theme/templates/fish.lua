@@ -16,7 +16,7 @@ M.gen = function(schema)
 
 # --> special
 set -l fg ${white1}
-set -l sel ${ink2}
+set -l sel ${dark2}
 
 # --> palette
 set -l red ${red1}
@@ -27,7 +27,7 @@ set -l blue ${blue1}
 set -l purple ${violet1}
 set -l magenta ${magenta1}
 set -l cyan ${aqua1}
-set -l black ${gray1}
+set -l black ${dark5}
 
 # Syntax Highlighting
 set -g fish_color_normal $fg

@@ -1,12 +1,6 @@
 return {
-	-- {
-	-- 	dir = "~/repos/galax.nvim",
-	-- 	lazy = true,
-	-- 	priority = 1000,
-	-- 	opts = {},
-	-- },
 	{
-		"dm1nh/galax.nvim",
+		dir = "~/repos/interstellar.nvim",
 		lazy = true,
 		priority = 1000,
 		opts = {},

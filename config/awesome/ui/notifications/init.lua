@@ -120,7 +120,7 @@ naughty.connect_signal("request::display", function(n)
       {
         widget = wibox.widget.textbox,
         font = beautiful.font_icon .. " 11",
-        markup = helpers.ui.colorize_text("", beautiful.ink0),
+        markup = helpers.ui.colorize_text("", beautiful.dark0),
       },
     },
   })
@@ -158,7 +158,7 @@ naughty.connect_signal("request::display", function(n)
     widget_template = {
       widget = wibox.container.background,
       forced_height = dpi(28),
-      bg = beautiful.ink2,
+      bg = beautiful.dark2,
       shape = helpers.ui.rrect(beautiful.border_radius),
       {
         widget = wibox.container.place,
@@ -205,7 +205,7 @@ naughty.connect_signal("request::display", function(n)
             margins = { top = dpi(4), bottom = dpi(4), left = dpi(8), right = dpi(4) },
             widget = wibox.container.margin,
           },
-          bg = beautiful.ink3,
+          bg = beautiful.dark3,
           widget = wibox.container.background,
         },
         {
