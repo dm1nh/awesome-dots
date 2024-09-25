@@ -16,13 +16,13 @@ M.gen = function(schema)
 * {
   none:         #00000000;
   accent:       ${accent};
-  ink:          ${ink};
-  ink0:         ${ink0};
-  ink1:         ${ink1};
-  ink2:         ${ink2};
-  ink3:         ${ink3};
-  ink4:         ${ink4};
-  ink5:         ${ink5};
+  dark:          ${dark};
+  dark0:         ${dark0};
+  dark1:         ${dark1};
+  dark2:         ${dark2};
+  dark3:         ${dark3};
+  dark4:         ${dark4};
+  dark5:         ${dark5};
   white:        ${white};
   white0:       ${white0};
   white1:       ${white1};
