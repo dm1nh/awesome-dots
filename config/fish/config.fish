@@ -16,8 +16,7 @@ set -U fish_greeting
 set -Ux PNPM_HOME $HOME/.local/share/pnpm
 
 # Add paths
-fish_add_path -g ~/.local/bin $PNPM_HOME $HOME/.local/share/fnm
-fnm env | source
+fish_add_path -g ~/.local/bin $PNPM_HOME
 
 set fish_color_valid_path
 
