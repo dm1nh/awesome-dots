@@ -41,9 +41,7 @@ fc-cache -r
 sudo cp config/awesome/theme/assets/greeting.png /usr/share/sddm/themes/Sugar-Candy/Backgrounds/
 
 # Install GTK themes
-git clone https://github.com/dm1nh/themix-generator.git
-cp -R themix-generator/themes/Interstellar ~/.local/share/themes/
-rm -rf themix-generator
+cp -R ./theme/gtk/{Interstellar,Interstellar-Darker} ~/.local/share/themes/
 
 # Backup old configs
 mv ~/.config ~/.config.backup
