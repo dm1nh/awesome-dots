@@ -1,0 +1,13 @@
+{
+  "editor.fontFamily": "'Astro Nerd Font', sans-serif",
+  "editor.fontSize": 18,
+  "terminal.integrated.fontFamily": "'Astro Nerd Font', sans-serif",
+  "terminal.integrated.fontSize": 18,
+  "omnisharp.useModernNet": false,
+  "editor.minimap.enabled": false,
+  "editor.suggest.showReferences": false,
+  "editor.codeLens": false,
+  "editor.inlayHints.enabled": "off",
+  "workbench.colorTheme": "Atom One Dark"
+}
+
