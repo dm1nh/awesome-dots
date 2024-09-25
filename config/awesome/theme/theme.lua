@@ -9,10 +9,10 @@ local icons = require("theme.icons")
 local palette = require("theme.palette")
 
 -- fonts
-theme.font_sans = "Cosmos Nerd Font"
+theme.font_sans = "Astro Nerd Font"
 theme.font = theme.font_sans .. " Regular 12"
 theme.font_icon = "Material Icons Round"
-theme.font_icon_default = theme.font_icon .. " 16"
+theme.font_icon_default = theme.font_icon .. " 15"
 
 -- colors
 theme.transparent = "#00000000"
@@ -49,15 +49,15 @@ theme.layout_dwindle = icons.layouts.dwindle
 theme.layout_floating = icons.layouts.floating
 theme.layout_max = icons.layouts.max
 
-theme.master_width_factor = 0.535
+theme.master_width_factor = 0.5625
 theme.master_count = 1
 theme.column_count = 1
 
 -- wibar
-theme.wibar_height = dpi(24)
+theme.wibar_height = dpi(22)
 
 -- gaps
-theme.useless_gap = 0
+theme.useless_gap = 1
 
 --- systray
 theme.systray_icon_size = dpi(16)
@@ -72,13 +72,13 @@ theme.tooltip_gaps = dpi(4)
 theme.tooltip_opacity = 0.8
 
 -- Borders
-theme.border_width = 0
-theme.border_radius = 6
+theme.border_width = 2
+theme.border_radius = 8
 theme.border_color_floating_active = theme.blue1
 theme.border_color_floating_normal = theme.ink4
--- theme.border_color_urgent = theme.red1
--- theme.border_color_active = theme.accent
--- theme.border_color_normal = theme.transparent
+theme.border_color_urgent = theme.red1
+theme.border_color_active = theme.accent
+theme.border_color_normal = theme.ink4
 
 -- Opacity, enabled if xcompmgr is installed
 -- theme.opacity_normal = 0.8

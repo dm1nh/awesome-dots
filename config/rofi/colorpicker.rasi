@@ -11,7 +11,7 @@
 
 configuration {
   show-icons:                     false;
-  font:                           "Cosmos Nerd Font Regular 13.5";
+  font:                           "Astro Nerd Font Regular 13.5";
   disable-history:                false;
   sidebar-mode:                   false;
 }
@@ -91,7 +91,7 @@ element {
 element-text {
   background-color:               inherit;
   text-color:                     inherit;
-  font:                           "Cosmos Nerd Font Medium 28";
+  font:                           "Astro Nerd Font Medium 28";
   expand:                         true;
   horizontal-align:               0.5;
   vertical-align:                 0.5;

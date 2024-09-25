@@ -34,7 +34,7 @@ xdg-user-dirs-update
 rm -rf ~/.local/share/{themes,fonts}
 mkdir -p ~/.local/share/{themes,fonts}
 git clone https://github.com/dm1nh/fonts.git
-cp -R fonts/{Cosmos-Patched,Material-Icons,NotoColorEmoji-Regular.ttf} ~/.local/share/fonts/
+cp -R fonts/{Astro-Patched,Material-Icons,NotoColorEmoji-Regular.ttf} ~/.local/share/fonts/
 sudo cp fonts/RobotoFlex-Variable.ttf /usr/share/fonts/
 rm -rf fonts
 fc-cache -r

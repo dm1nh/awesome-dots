@@ -27,7 +27,7 @@ map <C-i> recolor
 
 # OPTIONS
 # fonts
-set font "Cosmos Nerd Font Medium 11"
+set font "Astro Nerd Font Medium 11"
 
 # fit width
 set adjust-open "best-fit"

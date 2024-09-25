@@ -32,13 +32,13 @@ return function(s)
       bg = beautiful.ink_dark,
       {
         widget = wibox.container.margin,
-        margins = { left = dpi(8), right = dpi(8) },
+        margins = { left = beautiful.wibar_height / 2, right = beautiful.wibar_height / 2 },
         {
           widget = wibox.layout.align.horizontal,
           {
             taglist(s),
             tasklist(s),
-            spacing = beautiful.wibar_height,
+            spacing = beautiful.wibar_height / 2,
             layout = wibox.layout.fixed.horizontal,
           },
           nil,

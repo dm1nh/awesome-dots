@@ -30,7 +30,7 @@ overlay = true
 overlay_text_color = ${white1}
 overlay_background_color = ${ink2}
 overlay_background_alpha = ff
-overlay_font = Cosmos Nerd Font Medium:11
+overlay_font = Astro Nerd Font Medium:11
 overlay_position_bottom = false
 
 # bindings
