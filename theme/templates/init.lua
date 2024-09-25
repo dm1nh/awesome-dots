@@ -4,6 +4,8 @@ local templates = {
 	"btop",
 	"fish",
 	"imv",
+	"interstellar-gtk",
+	"interstellar-darker-gtk",
 	"rofi",
 	"sugar-candy",
 	"zathura",

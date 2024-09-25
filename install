@@ -42,7 +42,7 @@ sudo cp config/awesome/theme/assets/greeting.png /usr/share/sddm/themes/Sugar-Ca
 
 # Install GTK themes
 git clone https://github.com/dm1nh/themix-generator.git
-cp -R themix-generator/themes/Galax-Beige ~/.local/share/themes/
+cp -R themix-generator/themes/Interstellar ~/.local/share/themes/
 rm -rf themix-generator
 
 # Backup old configs
